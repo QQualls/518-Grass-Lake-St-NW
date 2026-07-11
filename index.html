@@ -86,19 +86,19 @@
     background:var(--green);
     color:#fff;
     padding:12px 24px;
-    display:flex; align-items:center; justify-content:space-between;
+    display:flex; flex-wrap:wrap; row-gap:8px; align-items:center; justify-content:space-between;
     box-shadow:0 2px 10px rgba(0,0,0,.15);
   }
-  header .addr{font-weight:bold; font-size:15px;}
+  header .addr{font-weight:bold; font-size:15px; min-width:0;}
   header .addr span{display:block; font-weight:normal; font-size:12px; color:#cfe0d6;}
-  header .actions{display:flex; gap:10px; align-items:center;}
+  header .actions{display:flex; gap:10px; align-items:center; flex-shrink:0;}
   header .btn-call{
     font-size:13px; color:#fff; text-decoration:none; border:1px solid #ffffff55;
-    padding:8px 12px; border-radius:4px;
+    padding:8px 12px; border-radius:4px; white-space:nowrap; flex-shrink:0;
   }
   header .btn-lead{
     background:var(--gold); color:#2a2110; font-weight:bold; font-size:13px;
-    padding:9px 16px; border-radius:4px; text-decoration:none; white-space:nowrap;
+    padding:9px 16px; border-radius:4px; text-decoration:none; white-space:nowrap; flex-shrink:0;
   }
 
   /* ---- hero ---- */
@@ -247,6 +247,10 @@
     .lead-wrap{grid-template-columns:1fr;}
     header .addr span{display:none;}
     .stats-strip div{padding:14px 16px; min-width:80px;}
+  }
+  @media (max-width: 480px){
+    header{padding:10px 16px;}
+    header .actions{width:100%; justify-content:space-between;}
   }
 </style>
 </head>
@@ -400,4 +404,4 @@
 
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                         
