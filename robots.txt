@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qqualls.github.io/518-Grass-Lake-St-NW/sitemap.xml
